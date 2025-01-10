@@ -6,8 +6,9 @@ edition = "2021"
 [dependencies]
 axum = "0.8.1"
 futures = "0.3.31"
+hound = "3.5.1"
 tokio = { version = "1.42.0", features = ["rt-multi-thread", "macros"] }
 tokio-util = { version = "0.7.13", features = ["codec"] }
-whisper-rs = "0.13.2"
+whisper-rs = { version = "0.13.2", features = ["cuda"] }
 bytes = "1.9.0"
 thiserror = "2.0.9"

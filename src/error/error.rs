@@ -10,6 +10,9 @@ pub enum Error {
 
     #[error("Codec error: {0}")]
     Codec(String),
+
+    #[error("Audio processing error: {0}")]
+    AudioProcesing(#[from] hound::Error),
 }
 
 impl From<whisper_rs::WhisperError> for Error {
