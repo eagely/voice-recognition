@@ -41,7 +41,7 @@ impl WhisperTranscriber {
 
         let mut params = FullParams::new(whisper_rs::SamplingStrategy::Greedy { best_of: 5 });
 
-        params.set_translate(true);
+        params.set_translate(false);
         params.set_language(Some("en"));
         params.set_print_special(false);
         params.set_print_progress(false);

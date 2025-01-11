@@ -585,20 +585,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "recognition"
-version = "0.1.0"
-dependencies = [
- "axum",
- "bytes",
- "futures",
- "hound",
- "thiserror",
- "tokio",
- "tokio-util",
- "whisper-rs",
-]
-
-[[package]]
 name = "regex"
 version = "1.11.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -871,6 +857,20 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e672c95779cf947c5311f83787af4fa8fffd12fb27e4993211a84bdfd9610f9c"
 dependencies = [
  "once_cell",
+]
+
+[[package]]
+name = "transcription"
+version = "0.1.0"
+dependencies = [
+ "axum",
+ "bytes",
+ "futures",
+ "hound",
+ "thiserror",
+ "tokio",
+ "tokio-util",
+ "whisper-rs",
 ]
 
 [[package]]
